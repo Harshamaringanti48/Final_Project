@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUM Computer Science - GPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <header class="header-container">
+            <div class="logo-section">
+                <img src="Images/Logo.png" alt="AUM Logo" class="logo">
+            </div>
+
+            <div class="header">
+                <div class="header-title">
+                    <h1>Computer Science Department</h1>
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="description.html">Program Description</a></li>
+                        <li><a href="TA.html">TA Application</a></li>
+                        <li><a href="GPA.html" class="active">GPA Calculator</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="gpa-container">
+                <h1>Find your GPA!</h1>
+                <p class="gpa-instructions">Enter the number of credit hours for each course, and the letter grade for each of them. At least 2 courses should be entered.</p>
+                
+                <div class="gpa-table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Credit Hours</th>
+                                <th>Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Course 1:</td>
+                                <td><input type="text" id="credit1"></td>
+                                <td><input type="text" id="grade1" maxlength="1"></td>
+                            </tr>
+                            <tr>
+                                <td>Course 2:</td>
+                                <td><input type="text" id="credit2"></td>
+                                <td><input type="text" id="grade2" maxlength="1"></td>
+                            </tr>
+                            <tr>
+                                <td>Course 3:</td>
+                                <td><input type="text" id="credit3"></td>
+                                <td><input type="text" id="grade3" maxlength="1"></td>
+                            </tr>
+                            <tr>
+                                <td>Course 4:</td>
+                                <td><input type="text" id="credit4"></td>
+                                <td><input type="text" id="grade4" maxlength="1"></td>
+                            </tr>
+                            <tr>
+                                <td>Course 5:</td>
+                                <td><input type="text" id="credit5"></td>
+                                <td><input type="text" id="grade5" maxlength="1"></td>
+                            </tr>
+                            <tr>
+                                <td>Avg GPA:</td>
+                                <td><input type="text" style="background-color: #989797;" id="gpaResult" value="" readonly></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><button type="button" onclick="calculateGPA()">submit</button></td>
+                                <td><button type="button" onclick="resetForm()">Reset</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>7400 East Drive</p>
+                    <p>Montgomery, AL 36117</p>
+                    <p>Local: 334-244-3000</p>
+                    <p>Toll-Free: 800-227-2649</p>
+                </div>
+                <div class="footer-center">
+                    <p>&copy; 2025 Harsha</p>
+                </div>
+                <div class="footer-right">
+                    <a href="#"><img src="images/twitter-social-network-logo-.png" alt="Twitter" class="social-icon"></a>
+                    <a href="#"><img src="Images/Pinterest-Logo.png" alt="Pinterest" class="social-icon"></a>
+                    <a href="#"><img src="images/facebook-social-network-logo.png" alt="Facebook" class="social-icon"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="GPA.js"></script>
+</body>
+</html>

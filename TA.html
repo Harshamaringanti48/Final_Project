@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUM Computer Science - TA Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-container">
+        <header class="header-container">
+            <div class="logo-section">
+                <img src="Images/Logo.png" alt="AUM Logo" class="logo">
+            </div>
+
+            <div class="header">
+                <div class="header-title">
+                    <h1>Computer Science Department</h1>
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="description.html">Program Description</a></li>
+                        <li><a href="TA.html" class="active">TA Application</a></li>
+                        <li><a href="GPA.html">GPA Calculator</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="form-container">
+                <h1>Teaching Assistant Application Form</h1>
+
+                <form action="survey_data.html" method="get">
+                    <h2>Applicant information</h2>
+
+                    <div class="form-group">
+                        <label for="firstName">First name:</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last name:</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentId">Student ID:</label>
+                        <input type="text" id="studentId" name="studentId" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Gender:</label>
+                        <div class="gender-options">
+                            <label class="checkbox-look">
+                                M <input type="radio" name="gender" value="Male" required>
+                            </label>
+                            <label class="checkbox-look">
+                                F <input type="radio" name="gender" value="Female" required>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gpa">GPA:</label>
+                        <input type="text" id="gpa" name="gpa" required style="max-width: 50px;">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments">Comments:</label>
+                        <textarea id="comments" name="comments"></textarea>
+                    </div>
+
+                    <div class="thank-you">
+                        Thank you for completing the application!
+                    </div>
+
+                    <div class="button-group">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>7400 East Drive</p>
+                    <p>Montgomery, AL 36117</p>
+                    <p>Local: 334-244-3000</p>
+                    <p>Toll-Free: 800-227-2649</p>
+                </div>
+                <div class="footer-center">
+                    <p>&copy; 2025 Harsha</p>
+                </div>
+                <div class="footer-right">
+                    <a href="#"><img src="images/twitter-social-network-logo-.png" alt="Twitter" class="social-icon"></a>
+                    <a href="#"><img src="Images/Pinterest-Logo.png" alt="Pinterest" class="social-icon"></a>
+                    <a href="#"><img src="images/facebook-social-network-logo.png" alt="Facebook" class="social-icon"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
